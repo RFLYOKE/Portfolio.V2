@@ -12,7 +12,7 @@ export const Timeline = ({ data }) => {
       const rect = ref.current.getBoundingClientRect();
       setHeight(rect.height);
     }
-  }, [ref]);
+  }, [ref, data]);  
 
   const { scrollYProgress } = useScroll({
     target: containerRef,
