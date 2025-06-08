@@ -38,7 +38,6 @@ A modern, animated 3D developer portfolio built with React, Three.js, TailwindCS
 | React Three Fiber | 3D rendering with Three.js in React   |
 | Drei              | Helpers and abstractions for R3F      |
 | Framer Motion     | Animation library for React           |
-| EmailJS           | Form handling and email integration   |
 | Aceternity UI     | Custom UI components                  |
 | Magic UI          | Prebuilt UI elements and design extras|
 
