@@ -11,9 +11,6 @@ A modern, animated 3D developer portfolio built with React, Three.js, TailwindCS
 - [Project Structure](#-project-structure)
 - [Getting Started](#-getting-started)
 - [Assets](#-assets)
-- [Contact Me](#-contact-me)
-- [Suggestions or Feedback](#-suggestions-or-feedback)
-- [Like This Project?](#-like-this-project)
 
 ---
 
