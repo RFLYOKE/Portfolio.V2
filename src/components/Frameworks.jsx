@@ -3,24 +3,24 @@ import PropTypes from "prop-types";
 
 export function Frameworks() {
   const skills = [
-    "bootstrap",
-    "cplusplus",
+    "html5",
     "css3",
+    "javascript",
+    "cplusplus",
+    "java",
+    "typescript",
+    "php",
+    "bootstrap",
+    "tailwindcss",
+    "react",
+    "next",
+    "nodejs",
+    "vitejs",
+    "laravel",
+    "mysql",
     "git",
     "github",
-    "html5",
-    "javascript",
-    "react",
-    "tailwindcss",
-    "vitejs",
-    "mysql",
-    "typescript",
-    "next",
     "figmaa",
-    "laravel",
-    "php",
-    "java",
-    "nodejs",
   ];
   return (
     <div className="relative flex h-[15rem] w-full flex-col items-center justify-center">
