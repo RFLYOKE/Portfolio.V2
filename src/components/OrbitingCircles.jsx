@@ -1,5 +1,6 @@
 import { twMerge } from "tailwind-merge";
 import React from "react";
+import PropTypes from "prop-types";
 
 export function OrbitingCircles({
   className,
@@ -55,3 +56,14 @@ export function OrbitingCircles({
     </>
   );
 }
+
+OrbitingCircles.propTypes = {
+  className: PropTypes.string,
+  children: PropTypes.node.isRequired,
+  reverse: PropTypes.bool,
+  duration: PropTypes.number,
+  radius: PropTypes.number,
+  path: PropTypes.bool,
+  iconSize: PropTypes.number,
+  speed: PropTypes.number,
+};

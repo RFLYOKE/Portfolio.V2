@@ -9,7 +9,7 @@ export const myProjects = [
       "Provides possible diagnoses and treatment recommendations based on image input.",
       "Responsive design with a clean and user-friendly interface.",
     ],
-    href: "https://myskin-v2.humicprototyping.com",
+    href: "",
     logo: "",
     image: "/assets/projects/myskin.png",
     tags: [
@@ -19,6 +19,25 @@ export const myProjects = [
   },
   {
     id: 2,
+    title: "Easy Pantry",
+    description:
+      "An e-commerce platform for selling food and cooking ingredients.",
+    subDescription: [
+      "Developed using Laravel and TailwindCSS.",
+      "I was responsible for designing and implementing the frontend components.",
+      "Features include product browsing, detailed food item descriptions, and cart system.",
+      "Clean and responsive layout tailored for food e-commerce UX.",
+    ],
+    href: "https://easy-pantry.shop/",
+    logo: "",
+    image: "/assets/projects/easy-pantry.jpeg",
+    tags: [
+      { id: 1, name: "Laravel", path: "/assets/logos/laravel.svg" },
+      { id: 2, name: "TailwindCSS", path: "/assets/logos/tailwindcss.svg" },
+    ],
+  },
+  {
+    id: 3,
     title: "Rent House Website",
     description: "A user-friendly and secure house rental platform.",
     subDescription: [
@@ -38,7 +57,7 @@ export const myProjects = [
     ],
   },
   {
-    id: 3,
+    id: 4,
     title: "KOI Fish Selling Website",
     description:
       "A KOI fish selling website with complete info and online transactions.",
@@ -58,7 +77,7 @@ export const myProjects = [
     ],
   },
   {
-    id: 4,
+    id: 5,
     title: "E-Commerce Platform",
     description: "An e-commerce platform for selling electronic goods.",
     subDescription: [
@@ -77,7 +96,7 @@ export const myProjects = [
     ],
   },
   {
-    id: 5,
+    id: 6,
     title: "Tour Ticket Booking Website",
     description: "A responsive and user-friendly tour ticket booking platform.",
     subDescription: [
@@ -96,7 +115,7 @@ export const myProjects = [
     ],
   },
   {
-    id: 6,
+    id: 7,
     title: "Movie Streaming Website",
     description: "An online movie streaming platform with complete features.",
     subDescription: [

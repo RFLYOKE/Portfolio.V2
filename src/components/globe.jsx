@@ -3,6 +3,7 @@
 import createGlobe from "cobe";
 import { useMotionValue, useSpring } from "motion/react";
 import { useEffect, useRef } from "react";
+import PropTypes from "prop-types";
 
 import { twMerge } from "tailwind-merge";
 
@@ -120,3 +121,8 @@ export function Globe({ className, config = GLOBE_CONFIG }) {
     </div>
   );
 }
+
+Globe.propTypes = {
+  className: PropTypes.string,
+  config: PropTypes.object,
+};

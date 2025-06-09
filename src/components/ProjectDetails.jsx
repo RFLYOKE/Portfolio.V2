@@ -1,4 +1,5 @@
 import { motion } from "motion/react";
+import PropTypes from "prop-types";
 const ProjectDetails = ({
   title,
   description,
@@ -26,7 +27,7 @@ const ProjectDetails = ({
           <h5 className="mb-2 text-2xl font-bold text-white">{title}</h5>
           <p className="mb-3 font-normal text-neutral-400">{description}</p>
           {subDescription.map((subDesc, index) => (
-            <p className="mb-3 font-normal text-neutral-400">{subDesc}</p>
+            <p key={index} className="mb-3 font-normal text-neutral-400">{subDesc}</p>
           ))}
           <div className="flex items-center justify-between mt-4">
             <div className="flex gap-3">
@@ -48,6 +49,16 @@ const ProjectDetails = ({
       </motion.div>
     </div>
   );
+};
+
+ProjectDetails.propTypes = {
+  title: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  subDescription: PropTypes.array.isRequired,
+  image: PropTypes.string.isRequired,
+  tags: PropTypes.array.isRequired,
+  href: PropTypes.string.isRequired,
+  closeModal: PropTypes.func.isRequired,
 };
 
 export default ProjectDetails;

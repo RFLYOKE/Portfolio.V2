@@ -1,4 +1,5 @@
 import { motion, AnimatePresence } from "motion/react";
+import PropTypes from "prop-types";
 const Alert = ({ type, text }) => {
   const alertVarients = {
     hidden: { opacity: 0, y: 50, scale: 0.8 },
@@ -32,6 +33,11 @@ const Alert = ({ type, text }) => {
       </motion.div>
     </AnimatePresence>
   );
+};
+
+Alert.propTypes = {
+  type: PropTypes.string.isRequired,
+  text: PropTypes.string.isRequired,
 };
 
 export default Alert;
