@@ -9,7 +9,7 @@ export const myProjects = [
       "Provides possible diagnoses and treatment recommendations based on image input.",
       "Responsive design with a clean and user-friendly interface.",
     ],
-    href: "",
+    href: "https://myskin-v2.humicprototyping.com/",
     logo: "",
     image: "/assets/projects/myskin.png",
     tags: [
