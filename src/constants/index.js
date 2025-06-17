@@ -196,4 +196,8 @@ export const certifications = [
     title: "Certificate Pemrograman Web by Dicoding",
     img: "/assets/certificates/dicoding_webdsr.jpeg",
   },
+  {
+    title: "Certificate Internship COE HUMIC ENGINEERING",
+    img: "/assets/certificates/humic.png",
+  },
 ];
