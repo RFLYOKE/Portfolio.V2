@@ -6,8 +6,15 @@ import Experiences from "./sections/Experiences";
 import Contact from "./sections/Contact";
 import Footer from './sections/Footer';
 import Certificate from "./sections/Certificate";
+import AOS from "aos";
+import { useEffect } from "react";
 
 const App = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 15000 * 2,
+    });
+  }, []);
   return (
     <div className="container mx-auto max-w-7xl">
       <Navbar />
