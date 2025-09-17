@@ -156,7 +156,7 @@ export const experiences = [
   {
     title: "Internship - Frontend Developer",
     job: "MySkin Web Application Development",
-    date: "February 2023 - May 2023",
+    date: "February 2025 - May 2025",
     contents: [
       "Developed and maintained the MySkin web application using React and Tailwind CSS, focusing on clean UI and responsive design.",
       "Implemented secure and scalable front-end features in compliance with standards from the Passive Defense Organization and National Cyberspace Center.",
