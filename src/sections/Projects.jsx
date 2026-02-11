@@ -9,12 +9,29 @@ const Projects = () => {
   const y = useMotionValue(0);
   const springX = useSpring(x, { damping: 10, stiffness: 50 });
   const springY = useSpring(y, { damping: 10, stiffness: 50 });
+
   const handleMouseMove = (e) => {
     x.set(e.clientX + 20);
     y.set(e.clientY + 20);
   };
+
   const [preview, setPreview] = useState(null);
-  const isMobile = useMediaQuery({ maxWidth: 853});
+  const isMobile = useMediaQuery({ maxWidth: 853 });
+
+  // ===== LOAD MORE LOGIC =====
+  const initialCount = 5;
+  const loadStep = 10;
+
+  const [visibleCount, setVisibleCount] = useState(
+    myProjects.length > initialCount ? initialCount : myProjects.length,
+  );
+
+  const handleLoadMore = () => {
+    setVisibleCount((prev) => Math.min(prev + loadStep, myProjects.length));
+  };
+
+  const visibleProjects = myProjects.slice(0, visibleCount);
+
   return (
     <section
       id="projects"
@@ -22,11 +39,28 @@ const Projects = () => {
       className="relative c-space section-spacing"
     >
       <h2 className="text-heading">My Projects</h2>
+
       <div className="bg-gradient-to-r from-transparent via-neutral-700 to-transparent mt-12 h-[1px] w-full" />
-      {myProjects.map((project) => (
+
+      {/* Project List */}
+      {visibleProjects.map((project) => (
         <Project key={project.id} {...project} setPreview={setPreview} />
       ))}
-      {isMobile ? null : preview && (
+
+      {/* Load More Button */}
+      {visibleCount < myProjects.length && (
+        <div className="flex justify-center mt-10">
+          <button
+            onClick={handleLoadMore}
+            className="px-6 py-3 text-sm font-medium text-white transition bg-neutral-800 rounded-lg hover:bg-neutral-700 cursor-pointer"
+          >
+            Load More
+          </button>
+        </div>
+      )}
+
+      {/* Preview Image (Desktop Only) */}
+      {!isMobile && preview && (
         <motion.img
           className="fixed top-0 left-0 z-50 object-cover h-56 rounded-lg shadow-lg pointer-events-none w-80"
           src={preview}
