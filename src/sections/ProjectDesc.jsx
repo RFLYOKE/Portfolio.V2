@@ -29,7 +29,7 @@ const ProjectDesc = () => {
       <div className="relative w-full h-[60vh] md:h-[75vh] bg-neutral-900 overflow-hidden">
         <button
           onClick={() => navigate(-1)}
-          className="absolute top-8 left-8 z-30 px-4 py-2 bg-black/40 backdrop-blur-md rounded-lg border border-white/10 hover:bg-white/10 hover:text-black/70 cursor-pointer transition-all flex items-center gap-2"
+          className="absolute top-2 md:top-8 left-2 md:left-8 z-30 px-4 py-2 bg-black/40 backdrop-blur-md rounded-lg border border-white/10 hover:bg-white/10 hover:text-black/70 cursor-pointer transition-all flex items-center gap-2"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
