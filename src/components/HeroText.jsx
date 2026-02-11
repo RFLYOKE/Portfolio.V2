@@ -38,7 +38,7 @@ const HeroText = () => {
           animate="visible"
           transition={{ delay: 1 }}
         >
-          Hi I'm Akmal Rafly Dzunurain
+          {`Hi I'm Akmal Rafly Dzunurain`}
         </motion.h1>
         <div className="flex flex-col items-start">
           <motion.p
@@ -120,9 +120,9 @@ const HeroText = () => {
 
           {/* Download CV Button */}
           <a
-            href="/CV-Terbaru.pdf"
+            href="/CV-Akmal Rafly Dzunurain.pdf"
             target="_blank"
-            download={"CV-Terbaru.pdf"}
+            download={"CV-Akmal Rafly Dzunurain.pdf"}
             className="group relative w-12 h-12"
           >
             <div className="absolute inset-0 -z-10 w-full h-full scale-150">
@@ -153,7 +153,7 @@ const HeroText = () => {
           animate="visible"
           transition={{ delay: 1 }}
         >
-          Hi,I'm Akmal Rafly Dzunurain
+          {`Hi,I'm Akmal Rafly Dzunurain`}
         </motion.p>
         <div>
           <motion.p

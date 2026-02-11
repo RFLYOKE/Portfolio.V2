@@ -8,6 +8,8 @@ import Footer from './sections/Footer';
 import Certificate from "./sections/Certificate";
 import AOS from "aos";
 import { useEffect } from "react";
+import { Route, Routes } from "react-router-dom";
+import ProjectDesc from "./sections/ProjectDesc";
 
 const App = () => {
   useEffect(() => {
@@ -18,13 +20,24 @@ const App = () => {
   return (
     <div className="container mx-auto max-w-7xl">
       <Navbar />
-      <Hero />
-      <About />
-      <Projects />
-      <Experiences />
-      <Certificate />
-      <Contact />
-      <Footer/>
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <>
+              <Hero />
+              <About />
+              <Projects />
+              <Experiences />
+              <Certificate />
+              <Contact />
+            </>
+          }
+        />
+        <Route path="/project/:id" element={<ProjectDesc />} />
+      </Routes>
+
+      <Footer />
     </div>
   );
 };

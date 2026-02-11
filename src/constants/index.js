@@ -12,9 +12,18 @@ export const myProjects = [
     href: "https://myskin-v2.humicprototyping.com/",
     logo: "",
     image: "/assets/projects/myskin.png",
+    images: [
+      "/assets/projects/images/myskin-1.jpeg",
+      "/assets/projects/images/myskin-2.jpeg",
+      "/assets/projects/images/myskin-3.jpeg",
+      "/assets/projects/images/myskin-4.jpeg",
+      "/assets/projects/images/myskin-5.jpeg",
+    ],
     tags: [
       { id: 1, name: "ReactJS", path: "/assets/logos/react.svg" },
       { id: 2, name: "TailwindCSS", path: "/assets/logos/tailwindcss.svg" },
+      { id: 3, name: "Laravel", path: "/assets/logos/laravel.svg" },
+      { id: 4, name: "MySQL", path: "/assets/logos/mysql.svg" },
     ],
   },
   {

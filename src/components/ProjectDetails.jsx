@@ -1,6 +1,8 @@
 import { motion } from "motion/react";
 import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
 const ProjectDetails = ({
+  id,
   title,
   description,
   subDescription,
@@ -42,13 +44,25 @@ const ProjectDetails = ({
                 />
               ))}
             </div>
-            <a
-              href={href}
-              target="_blank"
-              className="inline-flex items-center gap-1 font-medium cursor-pointer hover-animation"
-            >
-              View Project <img src="assets/arrow-up.svg" className="size-4" />
-            </a>
+            <div className="flex items-center gap-2">
+              <Link
+                to={`/project/${id}`}
+                className="px-5 py-2.5 bg-blue-600 hover:bg-blue-700 text-white rounded-lg font-medium transition-all flex items-center gap-2"
+              >
+                View Full Details
+                <img src="assets/arrow-right.svg" className="w-4 h-4 invert" />
+              </Link>
+
+              {href && (
+                <a
+                  href={href}
+                  target="_blank"
+                  className="text-neutral-800 bg-white rounded-lg px-5 py-2.5 hover:bg-neutral-700 hover:text-white text-sm"
+                >
+                  Live Demo
+                </a>
+              )}
+            </div>
           </div>
         </div>
       </motion.div>
@@ -57,6 +71,7 @@ const ProjectDetails = ({
 };
 
 ProjectDetails.propTypes = {
+  id: PropTypes.number.isRequired,
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
   subDescription: PropTypes.array.isRequired,
