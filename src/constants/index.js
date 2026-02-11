@@ -59,7 +59,7 @@ export const myProjects = [
     logo: "",
     image: "/assets/projects/nidejia.png",
     tags: [
-      { id: 1, name: "Next.js", path: "/assets/logos/next.svg" },
+      { id: 1, name: "Next JS", path: "/assets/logos/next.svg" },
       { id: 2, name: "TailwindCSS", path: "/assets/logos/tailwindcss.svg" },
       { id: 3, name: "Laravel", path: "/assets/logos/laravel.svg" },
       { id: 4, name: "MySQL", path: "/assets/logos/mysql.svg" },
