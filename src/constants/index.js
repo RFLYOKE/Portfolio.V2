@@ -154,18 +154,6 @@ export const mySocials = [
 
 export const experiences = [
   {
-    title: "Full Time - Frontend Developer",
-    job: "PT. Mandalika Multi Solusi",
-    date: "July 2025 - February 2026",
-    contents: [
-      "Developed and maintained modern web applications using Next.js and Tailwind CSS, ensuring high performance and SEO optimization.",
-      "Integrated RESTful APIs and managed global state to create seamless, dynamic, and interactive user experiences.",
-      "Collaborated with UI/UX designers to translate high-fidelity wireframes into responsive, pixel-perfect functional code.",
-      "Participated in code reviews and implemented best practices for clean, maintainable, and scalable codebase architecture.",
-      "Troubleshot and debugged issues to ensure cross-browser compatibility and mobile responsiveness.",
-    ],
-  },
-  {
     title: "Internship - Frontend Developer",
     job: "MySkin Web Application Development",
     date: "February 2025 - May 2025",
@@ -175,6 +163,18 @@ export const experiences = [
       "Created reusable and accessible UI components to streamline development and ensure design consistency.",
       "Optimized application performance and user experience across various devices and screen sizes.",
       "Collaborated closely with backend developers and designers to ensure seamless integration and user-friendly workflows.",
+    ],
+  },
+  {
+    title: "Full Time - Frontend Developer",
+    job: "PT. Mandalika Multi Solusi",
+    date: "July 2025 - February 2026",
+    contents: [
+      "Developed and maintained modern web applications using Next.js and Tailwind CSS, ensuring high performance and SEO optimization.",
+      "Integrated RESTful APIs and managed global state to create seamless, dynamic, and interactive user experiences.",
+      "Collaborated with UI/UX designers to translate high-fidelity wireframes into responsive, pixel-perfect functional code.",
+      "Participated in code reviews and implemented best practices for clean, maintainable, and scalable codebase architecture.",
+      "Troubleshot and debugged issues to ensure cross-browser compatibility and mobile responsiveness.",
     ],
   },
 ];
