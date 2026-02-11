@@ -155,7 +155,7 @@ export const mySocials = [
 export const experiences = [
   {
     title: "Full Time - Frontend Developer",
-    job: "PT Nadi Sukses Bersama",
+    job: "PT. Mandalika Multi Solusi",
     date: "July 2025 - February 2026",
     contents: [
       "Developed and maintained modern web applications using Next.js and Tailwind CSS, ensuring high performance and SEO optimization.",
