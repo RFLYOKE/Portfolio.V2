@@ -27,30 +27,6 @@ const ProjectDesc = () => {
   return (
     <section className="w-full min-h-screen bg-black-100 text-white pb-20 pt-14">
       <div className="relative w-full h-[60vh] md:h-[75vh] bg-neutral-900 overflow-hidden">
-        <button
-          onClick={() => navigate(-1)}
-          className="absolute top-2 md:top-8 left-2 md:left-8 z-30 px-4 py-2 bg-black/40 backdrop-blur-md rounded-lg border border-white/10 hover:bg-white/10 hover:text-black/70 cursor-pointer transition-all flex items-center gap-2"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            className="icon icon-tabler icons-tabler-outline icon-tabler-arrow-narrow-left"
-          >
-            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-            <path d="M5 12l14 0" />
-            <path d="M5 12l4 4" />
-            <path d="M5 12l4 -4" />
-          </svg>
-          <span>Back</span>
-        </button>
-
         {/* Image */}
         <AnimatePresence mode="wait">
           <motion.img
@@ -82,7 +58,30 @@ const ProjectDesc = () => {
         <div className="absolute bottom-0 w-full h-40 bg-gradient-to-t from-black-100 to-transparent z-10" />
       </div>
 
-      <div className="max-w-7xl mx-auto px-5 mt-10 grid md:grid-cols-3 gap-10">
+        <button
+          onClick={() => navigate(-1)}
+          className="mt-4 px-4 py-2 bg-white/40 backdrop-blur-md rounded-lg border border-white/10 hover:bg-white/10 hover:text-white/70 cursor-pointer transition-all flex items-center gap-2"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            className="icon icon-tabler icons-tabler-outline icon-tabler-arrow-narrow-left"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M5 12l14 0" />
+            <path d="M5 12l4 4" />
+            <path d="M5 12l4 -4" />
+          </svg>
+          <span>Back</span>
+        </button>
+      <div className="max-w-7xl mx-auto px-5 mt-4 grid md:grid-cols-3 gap-10">
         <div className="md:col-span-2 space-y-6">
           <h1 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
             {project.title}
