@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
-import { myProjects } from "../constants"; 
+import { myProjects } from "../constants";
 import { motion, AnimatePresence } from "motion/react";
 
 const ProjectDesc = () => {
@@ -58,29 +58,29 @@ const ProjectDesc = () => {
         <div className="absolute bottom-0 w-full h-40 bg-gradient-to-t from-black-100 to-transparent z-10" />
       </div>
 
-        <button
-          onClick={() => navigate(-1)}
-          className="mt-4 px-4 py-2 bg-white/40 backdrop-blur-md rounded-lg border border-white/10 hover:bg-white/10 hover:text-white/70 cursor-pointer transition-all flex items-center gap-2"
+      <button
+        onClick={() => navigate(-1)}
+        className="mt-4 px-4 py-2 bg-white/40 backdrop-blur-md rounded-lg border border-white/10 hover:bg-white/10 hover:text-white/70 cursor-pointer transition-all flex items-center gap-2"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          className="icon icon-tabler icons-tabler-outline icon-tabler-arrow-narrow-left"
         >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            className="icon icon-tabler icons-tabler-outline icon-tabler-arrow-narrow-left"
-          >
-            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-            <path d="M5 12l14 0" />
-            <path d="M5 12l4 4" />
-            <path d="M5 12l4 -4" />
-          </svg>
-          <span>Back</span>
-        </button>
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <path d="M5 12l14 0" />
+          <path d="M5 12l4 4" />
+          <path d="M5 12l4 -4" />
+        </svg>
+        <span>Back</span>
+      </button>
       <div className="max-w-7xl mx-auto px-5 mt-4 grid md:grid-cols-3 gap-10">
         <div className="md:col-span-2 space-y-6">
           <h1 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
