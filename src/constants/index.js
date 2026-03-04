@@ -167,6 +167,32 @@ export const myProjects = [
       { id: 5, name: "MySQL", path: "/assets/logos/mysql.svg" },
     ],
   },
+  {
+    id: 8,
+    title: "E-Commerce Colore Art Crafts",
+    description:
+      "A modern web-based e-commerce platform specializing in kids' equipment, toys, and creative learning tools with a seamless and secure shopping experience.",
+    subDescription: [
+      "Built with Next.js (TypeScript) for a fast, scalable, and SEO-friendly frontend experience.",
+      "Powered by Laravel REST API to handle product management, orders, payments, and secure authentication.",
+      "Features include product categories, shopping cart, wishlist, checkout system, and order tracking.",
+      "Role-based access for Admin and Customers with responsive design optimized for mobile and desktop users.",
+    ],
+    href: "",
+    logo: "",
+    image: "/assets/projects/images/colore-1.png",
+    images: [
+      "/assets/projects/images/colore-1.png",
+      "/assets/projects/images/colore-2.png",
+    ],
+    tags: [
+      { id: 1, name: "TypeScript", path: "/assets/logos/typescript.svg" },
+      { id: 2, name: "Next JS", path: "/assets/logos/next.svg" },
+      { id: 3, name: "Tailwind CSS", path: "/assets/logos/tailwindcss.svg" },
+      { id: 4, name: "Laravel", path: "/assets/logos/laravel.svg" },
+      { id: 5, name: "MySQL", path: "/assets/logos/mysql.svg" },
+    ],
+  },
 ];
 
 export const mySocials = [
