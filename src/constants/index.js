@@ -238,6 +238,16 @@ export const experiences = [
       "Troubleshot and debugged issues to ensure cross-browser compatibility and mobile responsiveness.",
     ],
   },
+  {
+    title: "Freelancer",
+    job: "Web Dev, UI/UX, and Project Manager",
+    date: "March 2026 - Present",
+    contents: [
+      "Led end-to-end web development projects, from initial concept and UI/UX design to final deployment.",
+      "Managed project timelines, client communications, and deliverables as a dedicated Project Manager.",
+      "Designed and built responsive, modern web applications tailored to specific client needs.",
+    ],
+  },
 ];
 
 export const certifications = [
