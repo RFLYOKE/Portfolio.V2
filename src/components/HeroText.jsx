@@ -61,7 +61,7 @@ const HeroText = () => {
               className="font-black text-white text-8xl"
             />
           </motion.div>
-          <motion.p
+          {/* <motion.p
             className="text-4xl font-medium text-neutral-300"
             variants={variants}
             initial="hidden"
@@ -69,7 +69,7 @@ const HeroText = () => {
             transition={{ delay: 1.8 }}
           >
             Web Developer
-          </motion.p>
+          </motion.p> */}
         </div>
         <motion.div
           className="flex items-center gap-6 mt-4"
@@ -176,7 +176,7 @@ const HeroText = () => {
               className="font-bold text-white text-7xl"
             />
           </motion.div>
-          <motion.p
+          {/* <motion.p
             className="text-4xl font-black text-neutral300"
             variants={variants}
             initial="hidden"
@@ -184,7 +184,7 @@ const HeroText = () => {
             transition={{ delay: 1.8 }}
           >
             Web Developer
-          </motion.p>
+          </motion.p> */}
         </div>
       </div>
     </div>
