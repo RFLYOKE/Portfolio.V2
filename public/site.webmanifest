@@ -1,0 +1,25 @@
+{
+  "name": "Akmal Rafly Dzunurain",
+  "short_name": "Akmal Rafly",
+  "description": "Portfolio Akmal Rafly Dzunurain - Frontend Developer & Web Developer Indonesia",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#1a1a2e",
+  "theme_color": "#1a1a2e",
+  "lang": "id",
+  "categories": ["portfolio", "technology", "developer"],
+  "icons": [
+    {
+      "src": "/assets/logos/img1.jpg",
+      "sizes": "192x192",
+      "type": "image/jpeg",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/assets/logos/img1.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg",
+      "purpose": "any maskable"
+    }
+  ]
+}
