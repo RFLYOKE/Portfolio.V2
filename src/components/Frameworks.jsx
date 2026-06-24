@@ -15,6 +15,8 @@ export function Frameworks() {
     "react",
     "next",
     "nodejs",
+    "express-js",
+    "postgresql",
     "vitejs",
     "laravel",
     "mysql",
